@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie WatchList</title>
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>🎬 Movie Watchlist</h1>
+
+      <!-- Section Section -->
+      <div class="search-section">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a movie..."
+        />
+        <button id="search-button">Search</button>
+      </div>
+
+      <!-- Search Results Section -->
+      <div id="search-results" class="movie-section">
+        <h2>Search Results</h2>
+        <div id="results-container"></div>
+      </div>
+
+      <!-- Watchlist Section -->
+      <div id="watchlist" class="movie-section">
+        <h2>My Watchlist</h2>
+        <div id="watchlist-container"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
